@@ -1,8 +1,10 @@
-# 2209B. Array
+# contest 2222 : A Wonderful Contest
 
 t=int(input())
 for i in range(t):
     n=int(input())
     arr=list(map(int,input().split()))
-    for in arr:
-        
+    if 100 in arr :
+        print("YES")
+    else:
+        print("NO")
