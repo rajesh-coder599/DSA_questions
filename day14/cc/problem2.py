@@ -15,4 +15,4 @@ for _ in range(t):
             ans_arr[i]=l
             l+=1
             i-=1
-    print(ans_arr)
+    print(*ans_arr)
