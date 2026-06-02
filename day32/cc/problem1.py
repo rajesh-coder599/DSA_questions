@@ -13,6 +13,4 @@ for _ in range(t):
     for j in range(1,n,2):
         a=2*arr[j-1]
         arr[j]=a
-    # if arr[-1]==-1:
-    #     arr[-1]=arr[-2]*2
     print(*arr)
