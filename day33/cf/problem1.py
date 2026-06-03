@@ -8,6 +8,4 @@ for _ in range(t):
         print(1)
         continue
     ans=min(abs(x1-x2),n-abs(x1-x2))
-    mx=n//2
-    print(mx-ans)
-    
+    print(ans)
