@@ -4,10 +4,13 @@
 def createGrid(m,n):
     a=["."]*n
     b=["#"]*n
+    b[-1]="."
     u="".join(a)
     s="".join(a)
     grid=[s]
     for _ in range(m-1):
-        temp=u[:0]+"."
-        grid.append(temp)
+        grid.append(u)
     return grid
+m=2
+n=3
+print()
