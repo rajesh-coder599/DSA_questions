@@ -2,7 +2,7 @@
 
 
 def longestConsecutive(nums):
-    parent={}
+    length={}
     a=set(nums)
     vis=set()
     ans=0
@@ -16,8 +16,8 @@ def longestConsecutive(nums):
             currlen+=1
             x-=1
         if x in vis:
-            currlen+=parent[x]
-        parent[i]=currlen
+            currlen+=length[x]
+        length[i]=currlen
         ans=max(ans,currlen)
     return ans
         
