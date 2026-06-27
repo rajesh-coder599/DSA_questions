@@ -8,7 +8,7 @@ for _ in range(t):
     i=0
     j=n-1
     check=True
-    while i<=r:
+    while i<=j:
         if s[i] != s[j] :
             check=False
             break
