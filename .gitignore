@@ -1,0 +1,8 @@
+.vscode/
+.vscode-server/
+.cache/
+.config/
+.local/
+.dotnet/
+__pycache__/
+*.pyc
