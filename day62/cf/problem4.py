@@ -2,7 +2,7 @@
 # C1. Marenol (easy version)
 
 
-
+## WA
 t=int(input())
 for _ in range(t):
     n=int(input())
