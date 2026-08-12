@@ -2,12 +2,13 @@
 
 
 
-# def winnerSquareGame(n):
-#     if type(n**0.5)==int :
-#         return True
-#     x=1
-#     sqr=1
-#     prev=1
-#     while sqr<=n:
-#         prev=x%2
-print(1%2)
+def winnerSquareGame(n):
+    dp=[False]*(n+1)
+    for i in range(1,n+1):
+        k=1
+        while k*k<=i:
+            if not dp[i-k*k]:
+                dp[i]=True
+                break
+            k+=1
+    return dp[n]
