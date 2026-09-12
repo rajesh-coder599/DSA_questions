@@ -1,0 +1,8 @@
+# 3870. Count Commas in Range
+
+
+
+def countCommas(n):
+    if n<1000:
+        return 0
+    return abs(n-999)
