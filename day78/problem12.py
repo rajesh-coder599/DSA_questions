@@ -1,24 +1,6 @@
-# 1520. Maximum Number of Non-Overlapping Substrings
+# 1401. Circle and Rectangle Overlapping
 
 
 
-
-def maxNumOfSubstrings(s):
-    n=len(s)
-    occurenc={}
-    for i in range(n):
-        if s[i] not in occurenc:
-            occurenc[s[i]]=[i,i]
-        else:
-            occurenc[s[i]][1]=i
-    ans=0
-    last_idx=0
-    for i in range(n):
-        l,r=occurenc[s[i]]
-        if r==i and l>=last_idx:
-            ans+=1
-            last_idx=r+1
-    return ans
-
-s = "adefaddaccc"
-print(maxNumOfSubstrings(s))
+def checkOverlap(radius,xCenter,yCenter,x1,y1,x2,y2):
+    return max(x1,radius-xCenter)<min(x2,radius+xCenter) and max(y1,radius-yCenter)<min(y2,radius+yCenter)
